@@ -14,7 +14,7 @@ body {
 .container {
     background-color: white;
     border-radius: 10px;
-    height: 250px;
+    height: 300px;
     width: 500px;
     margin-top: 230px;
     margin-bottom: auto;
@@ -25,9 +25,9 @@ body {
 }
 
 .quote-container {
-    width: 90%;
-    margin: 25px auto;
-    height: 65px;
+    width: 95%;
+    margin: 15px auto;
+    height: 130px;
     font-size: 18px;
     display: block;
 }
