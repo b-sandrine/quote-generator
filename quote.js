@@ -2,12 +2,12 @@
 var quote_holder = document.getElementById("root");
 var quote_author = document.getElementById("author");
 
-let quotes = 
-    {
-        "quote": "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-        "author": "Nelson Mandela",
-    }
+function handleClick () {
 
-
-quote_holder.innerText = quotes.quote;
-quote_author.innerText = quotes.author;
+    fetch('https://api.quotable.io/random')
+        .then(response => response.json()).then(result => {
+            quote_holder.innerText = result.content;
+            quote_author.innerText = result.author;
+        })
+        .catch(err => console.error(err));
+}
