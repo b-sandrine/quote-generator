@@ -22,12 +22,13 @@ body {
     margin-right: auto;
     text-align: center;
     padding: 15px;
+    position: relative;
 }
 
 .quote-container {
     width: 95%;
     margin: 15px auto;
-    height: 130px;
+    height: auto;
     font-size: 18px;
     display: block;
 }
@@ -43,9 +44,16 @@ body {
     margin: 5px 0px;
 }
 
+.unchangeble {
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 15px;
+}
+
 hr {
     color: #034ca685;
-    margin-top: 50px 10px 0 10px; 
+    width: 100%;
 }
 
 .contact {
