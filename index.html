@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Quote generator</title>
 </head>
-<body>
+<body id="color">
     <div class="container">
         <h1 class="heading">Quote of the Day</h1>
         <div class="quote-container">
             <i class="fa-solid fa-quote-left"></i>
-            <span id="root"></span>
+            <span id="root">Life is too short. Make sure to enjoy every moment if its!</span>
             <i class="fa-solid fa-quote-right"></i>
             <br>
             <div class="quote-author">
@@ -21,15 +21,15 @@
             </div>
         </div>
         <div class="unchangeble">
-            <hr>
+            <hr id="hr">
             <div class="contact">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-slack"></i>
-                <i class="fa-brands fa-instagram"></i>
+                <a target="_blank" href="https://www.instagram.com/" ><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://github.com/b-sandrine"><i class="fa-brands fa-github"></i></a>
             </div>
             <div class="button">
-                <input type="submit" name="submit" value="New  Quote" onclick="{handleClick()}">
+                <input type="submit" name="submit" id="color" value="New  Quote" onclick="{handleClick()}">
+                <input type="submit" name="submit" id="color" value="Change Color" onclick="{changeBackground()}">
             </div> 
         </div>
     </div>
