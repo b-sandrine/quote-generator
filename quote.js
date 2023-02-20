@@ -4,9 +4,9 @@ var quote_author = document.getElementById("author");
 
 function handleClick () {
     console.log("I am here")
-    loader(400)
     fetch('https://api.quotable.io/random')
         .then(response => response.json()).then(result => {
+            loader(1000)
             quote_holder.innerText = result.content;
             quote_author.innerText = result.author;
         })
