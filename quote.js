@@ -4,6 +4,7 @@ var quote_author = document.getElementById("author");
 
 function handleClick () {
     console.log("I am here")
+    loader(400)
     fetch('https://api.quotable.io/random')
         .then(response => response.json()).then(result => {
             quote_holder.innerText = result.content;
@@ -13,6 +14,7 @@ function handleClick () {
 }
 
 function changeBackground() {
+    loader(1000);
     var colors = ["red","black","green","#006666","#666633","purple","orange","teal","maroon","brown","#33cccc","#003300","#993300","blue","#660066"]
     var index = Math.floor((Math.random() * 15) + 1);
     console.log(index)
@@ -28,4 +30,11 @@ function changeBackground() {
     for(i=0;i<links.length; i++) {
         links[i].style.color = color;
     }
+}
+
+function loader (timeout) {
+    AmagiLoader.show();
+    setTimeout(() => {
+        AmagiLoader.hide();
+    }, timeout);
 }
